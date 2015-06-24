@@ -1,0 +1,74 @@
+{
+  "leagues": [
+   {
+      "id": 353,
+      "caption":"Bundesliga 2014/15",
+      "logo": "353-BL.png",
+      "league":"BL3",
+      "year":"2014",
+      "numberOfTeams":20,
+      "numberOfGames":380,
+      "lastUpdated":"2015-05-24T03:47:19Z"
+   },
+   {
+      "id": 354,
+      "caption":"Premier League 2014/15",
+      "logo": "354-PL.png",
+      "league":"PL",
+      "year":"2014",
+      "numberOfTeams":20,
+      "numberOfGames":380,
+      "lastUpdated":"2015-05-24T18:52:22Z"
+   },
+   {
+      "id": 355,
+      "caption":"Ligue 1 2014/15",
+      "logo": "355-FL1.png",
+      "league":"FL1",
+      "year":"2014",
+      "numberOfTeams":20,
+      "numberOfGames":380,
+      "lastUpdated":"2015-05-24T03:44:55Z"
+   },
+   {
+      "id": 357,
+      "caption":"Serie A 2014/15",
+      "logo": "357-SA.png",
+      "league":"SA",
+      "year":"2014",
+      "numberOfTeams":20,
+      "numberOfGames":380,
+      "lastUpdated":"2015-05-31T21:35:30Z"
+   },
+   {
+      "id": 358,
+      "caption":"Primera Division 2014/15",
+      "logo": "358-PD.png",
+      "league":"PD",
+      "year":"2014",
+      "numberOfTeams":20,
+      "numberOfGames":380,
+      "lastUpdated":"2015-05-24T03:52:11Z"
+   },
+   {
+      "id": 368,
+      "caption":"Primeira Liga 2014/15",
+      "logo": "368-PPL.png",
+      "league":"PPL",
+      "year":"2014",
+      "numberOfTeams":18,
+      "numberOfGames":306,
+      "lastUpdated":"2015-05-24T03:59:54Z"
+   },
+   {
+      "id": 362,
+      "caption":"Champions League 2014/15",
+      "logo": "362-CL.png",
+      "league":"CL",
+      "year":"2014",
+      "numberOfTeams":32,
+      "numberOfGames":125,
+      "lastUpdated":"2015-06-12T12:42:12Z"
+   }
+]
+}
