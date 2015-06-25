@@ -3,11 +3,8 @@
 angular.module('footballer', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
   .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
-      });
+      .state('home', { url: '/', templateUrl: 'app/main/main.html', controller: 'MainCtrl'})
+      .state('league', { url: '/league/{id:[0-9]{1,4}}', templateUrl: 'app/league/league.html', controller: 'LeagueCtrl'})
 
     $urlRouterProvider.otherwise('/');
 
