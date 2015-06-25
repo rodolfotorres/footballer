@@ -1,10 +1,10 @@
 {
   "leagues": [
    {
-      "id": 353,
+      "id": 351,
       "caption":"Bundesliga 2014/15",
       "logo": "353-BL.png",
-      "league":"BL3",
+      "league":"BL1",
       "year":"2014",
       "numberOfTeams":20,
       "numberOfGames":380,
@@ -59,16 +59,6 @@
       "numberOfTeams":18,
       "numberOfGames":306,
       "lastUpdated":"2015-05-24T03:59:54Z"
-   },
-   {
-      "id": 362,
-      "caption":"Champions League 2014/15",
-      "logo": "362-CL.png",
-      "league":"CL",
-      "year":"2014",
-      "numberOfTeams":32,
-      "numberOfGames":125,
-      "lastUpdated":"2015-06-12T12:42:12Z"
    }
 ]
 }
