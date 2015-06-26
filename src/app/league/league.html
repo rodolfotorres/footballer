@@ -16,12 +16,15 @@
 
   <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="team in teams">
-      <div class="thumbnail">
+      <div class="thumbnail thumbnail-team" ui-sref="team({id: {{team.id}}})">
+        <div class="lay-favourite">
+          <span class="glyphicon glyphicon-star"></span>
+        </div>
         <div class="lay-logo">
           <img class="logo" ng-src="{{team.crestUrl}}" alt="{{team.name}}">
         </div>
         <div class="caption">
-            <h3>{{team.name}}</h3>
+          <h3>{{team.name}}</h3>
           <p>{{team.shortName}}</p>
         </div>
       </div>
