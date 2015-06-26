@@ -12,10 +12,18 @@ angular.module('footballer').factory('Leagues', function($resource){
   return $resource('/assets/data/leagues.json');
 });
 
-angular.module('footballer').service('leagueService', function($resource){
-  this.getLeague = function(id, callback){
-    $resource('/assets/data/leagues.json').get(function(data){
-      callback(data.leagues[0]);
+angular.module('footballer').service('leagueService', function($resource, $q, lodash){
+  this.getLeague = function(id){
+    return $q(function(resolve, reject){
+      $resource('/assets/data/leagues.json').get(function(data){
+        if(data){
+          var league = lodash.find(data.leagues, {id: id});
+          if(league){
+            resolve(league);
+          }
+        }
+        reject('League doesn\'t exist');
+      });
     });
   };
 });

@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('footballer', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'ngTable'])
+angular.module('footballer', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'ngTable', 'ngLodash'])
   .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider
       .state('home', { url: '/', templateUrl: 'app/main/main.html', controller: 'MainCtrl'})
-      .state('league', { url: '/league/{id:3[0-9]{1,2}}', templateUrl: 'app/league/league.html', controller: 'LeagueCtrl'})
+      .state('league', { url: '/league/{id:3[0-9]{1,2}}', templateUrl: 'app/league/league.html', controller: 'LeagueCtrl'});
 
     $urlRouterProvider.otherwise('/');
 

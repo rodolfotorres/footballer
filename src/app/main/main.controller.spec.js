@@ -1,6 +1,6 @@
 'use strict';
 
-describe('controllers', function(Leagues){
+describe('controllers', function(){
   var scope;
 
   beforeEach(module('footballer'));
