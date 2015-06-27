@@ -14,6 +14,13 @@ angular.module('footballer').factory('LeagueTable', function($resource) {
   })
   .factory('Leagues', function($resource) {
     return $resource('/assets/data/leagues.json');
+  })
+  .service('initFavourites', function(TeamModel, favouritesService, $localStorage) {
+    (function loadFromLocalStorage(favourites) {
+      favourites.teams = $localStorage.teams.map(function(team) {
+        return new TeamModel(team);
+      });
+    })(favouritesService);
   });
 
 angular.module('footballer').service('leagueService', function($resource, $q, lodash) {
@@ -34,16 +41,14 @@ angular.module('footballer').service('leagueService', function($resource, $q, lo
   };
 });
 
-angular.module('footballer').service('teamService', function($resource, $q, lodash) {
+angular.module('footballer').service('teamService', function($resource, $q, lodash, TeamModel) {
   this.getTeams = function(id) {
     return $q(function(resolve) {
       $resource('http://api.football-data.org/alpha/soccerseasons/:id/teams').get({
         id: id
       }, function(data) {
         resolve(lodash.map(data.teams, function(team) {
-          var link = team._links.self.href.split('/');
-          team.id = link[link.length - 1];
-          return team;
+          return new TeamModel(team);
         }));
       });
     });

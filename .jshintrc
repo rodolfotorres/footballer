@@ -31,6 +31,7 @@
     "after": false,
     "afterEach": false,
     "expect": false,
-    "console": false
+    "console": false,
+    "spyOn": false
   }
 }

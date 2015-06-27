@@ -1,5 +1,4 @@
-{
-  "leagues": [
+[
    {
       "id": "351",
       "caption":"Bundesliga 2014/15",
@@ -61,4 +60,3 @@
       "lastUpdated":"2015-05-24T03:59:54Z"
    }
 ]
-}

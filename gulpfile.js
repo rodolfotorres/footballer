@@ -6,6 +6,7 @@ var wrench = require('wrench');
 
 var options = {
   src: 'src',
+  bower: 'bower_components',
   dist: 'dist',
   tmp: '.tmp',
   e2e: 'e2e',
