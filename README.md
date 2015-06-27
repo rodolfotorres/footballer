@@ -6,7 +6,7 @@ footballer app
 
 ## Live
 
-[Live](http://footballer.azurewebsites.net)
+[Live](http://footballer-eu.azurewebsites.net)
 
 ## Run
 
