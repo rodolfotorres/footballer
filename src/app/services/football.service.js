@@ -26,9 +26,9 @@ angular.module('footballer').factory('LeagueTable', function($resource) {
 angular.module('footballer').service('leagueService', function($resource, $q, lodash) {
   this.getLeague = function(id) {
     return $q(function(resolve, reject) {
-      $resource('/assets/data/leagues.json').get(function(data) {
+      $resource('/assets/data/leagues.json').query(function(data) {
         if (data) {
-          var league = lodash.find(data.leagues, {
+          var league = lodash.find(data, {
             id: id
           });
           if (league) {
