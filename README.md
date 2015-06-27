@@ -10,22 +10,43 @@ footballer app
 
 ## Run
 
+```bash
 npm install
+```
 
 ## Tests
 
+```bash
 gulp test
-gulp test:auto
+```
+or
 
-## Developer
+```bash
+gulp test:auto
+```
+
+## Developer mode
 
 gulp serve
+
+```bash
+gulp serve
+```
+or
+
+```bash
+gulp serve:dist
+```
 
 
 ## Distribution
 
+```bash
 gulp
+```
 
 ### Powered by
 
-[football-data](http://api.football-data.org/index)
+* [football-data](http://api.football-data.org/index)
+
+* [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)
