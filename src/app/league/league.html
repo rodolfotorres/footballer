@@ -7,8 +7,11 @@
   </div>
 </div>
 <div class="lay-body container extended">
+  <div class="well">
+    <input class="ld-search" placeholder="Search ..." ng-model="searchTerm">
+  </div>
   <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="team in teams">
+    <div class="col-sm-6 col-md-4" ng-repeat="team in teams | filter:searchTerm">
       <div team-thumbnail></div>
     </div>
   </div>
